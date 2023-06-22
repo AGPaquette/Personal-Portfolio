@@ -49,7 +49,7 @@ body {
     color: #FFF8D6;
 }
 
-.navigation-bar a:hover {
+#navigation-bar a:hover {
     color: black;
     cursor: pointer;
     background-color: #FFF8D6;
