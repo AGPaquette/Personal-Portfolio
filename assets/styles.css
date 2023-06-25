@@ -1,10 +1,16 @@
+/*added to make things easier to change if needed*/
+:root {
+    --darkgreen: #617A55;
+    --light: #FFF8D6;
+}
+
 body {
     margin: 0;
     font-family: serif;
-    background-color: #FFF8D6;
-    color: #FFF8D6;
+    background-color: var(--light);
+    color: var(light);
 }
-/**/
+
 #web-heading {
     display: flex;
     flex-wrap: wrap;
@@ -46,28 +52,28 @@ a {
 }
 
 a:visited {
-    color: #FFF8D6;
+    color: var(--light);
 }
 
 #top {
-    color: #617A55;
+    color: var(--darkgreen);
 }
 
 #top:hover {
     color: black;
     cursor: pointer;
-    background-color: #617A55;
+    background-color: var(--darkgreen);
 }
 
 /*changes the appearance of the navigation bar when the curser is over it as well as the apperance of the curser*/
 a:hover {
     color: black;
     cursor: pointer;
-    background-color: #FFF8D6;
+    background-color: var(--light);
 }
 
 #website-body {
-    color: #617A55;
+    color: var(--darkgreen);
 }
 
 #website-body section {
@@ -75,7 +81,7 @@ a:hover {
 }
 
 #contact-info {
-    border-bottom: 5px solid #617A55;
+    border-bottom: 5px solid var(--darkgreen);
     padding-bottom: 3%;
     padding-top: 2%;
     text-align: center;
@@ -83,13 +89,13 @@ a:hover {
 
 #about-me {
     text-align: center;
-    border-bottom: 5px solid #617A55;
+    border-bottom: 5px solid var(--darkgreen);
     padding-bottom: 10%;
 }
 
 #my-projects {
     text-align: center;
-    border-bottom: 5px solid #617A55;
+    border-bottom: 5px solid var(--darkgreen);
     padding-bottom: 10%;
 }
 
@@ -106,7 +112,7 @@ a:hover {
 }
 
 #about-me img {
-    border: 5px groove #617A55;
+    border: 5px groove var(--darkgreen);
     border-radius: 30%;
     max-width: 5%;
     max-height: 10%;
@@ -118,8 +124,8 @@ h2 {
 
 .project-name {
     margin-right: 2%;
-    border: #617A55 solid;
-    background-color: #FFF8D6;
+    border: var(--darkgreen) solid;
+    background-color: var(--light);
     font-size: medium;
 }
 
@@ -159,7 +165,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 1%;
-    border: 2px solid #617A55;
+    border: 2px solid var(--darkgreen);
 }
 
 #chat-box:hover {
