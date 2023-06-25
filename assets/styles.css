@@ -30,6 +30,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+/*margins set to auto to center object*/
 
 #navigation-bar {
     font-size: large;
@@ -38,17 +39,28 @@ body {
     margin-right: auto;
 }
 
-#navigation-bar a {
+a {
     text-decoration: underline;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#navigation-bar a:visited {
+a:visited {
     color: #FFF8D6;
 }
 
-#navigation-bar a:hover {
+#top {
+    color: #617A55;
+}
+
+#top:hover {
+    color: black;
+    cursor: pointer;
+    background-color: #617A55;
+}
+
+/*changes the appearance of the navigation bar when the curser is over it as well as the apperance of the curser*/
+a:hover {
     color: black;
     cursor: pointer;
     background-color: #FFF8D6;
@@ -81,6 +93,7 @@ body {
     padding-bottom: 10%;
 }
 
+/*grid layout was set up to make the layout of the projects look as they do on the website in order to achieve what you cant with a flex box*/
 #grid-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr) minmax(200px);
@@ -88,7 +101,7 @@ body {
     grid-auto-rows: 200px calc(10vh - 100px);
 }
 
-#about-me h3 {
+#about-me h2 {
     text-decoration: underline;
 }
 
@@ -99,11 +112,7 @@ body {
     max-height: 10%;
 }
 
-#my-projects h3 {
-    text-decoration: underline;
-}
-
-#contact-info h3 {
+h2 {
     text-decoration: underline;
 }
 
@@ -222,7 +231,7 @@ body {
 
 
 @media screen and (max-width: 220px) {
-    #navigation-bar a {
+    a {
         line-height: 2;
         margin-left: 3px;
         margin-right: 3px;
