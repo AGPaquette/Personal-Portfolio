@@ -4,9 +4,8 @@ body {
     background-color: #FFF8D6;
     color: #FFF8D6;
 }
-
+/**/
 #web-heading {
-    position: sticky;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -18,8 +17,8 @@ body {
 }
 
 #left-avatar {
-    height: 14%;
-    width: 6%;
+    height: 10%;
+    width: 3%;
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -82,15 +81,21 @@ body {
     padding-bottom: 10%;
 }
 
+#grid-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) minmax(200px);
+    gap: 10px;
+    grid-auto-rows: 200px calc(10vh - 100px);
+}
+
 #about-me h3 {
     text-decoration: underline;
 }
 
 #about-me img {
-    margin-right: 10px;
     border: 5px groove #617A55;
     border-radius: 30%;
-    max-width: 10%;
+    max-width: 5%;
     max-height: 10%;
 }
 
@@ -102,6 +107,79 @@ body {
     text-decoration: underline;
 }
 
+.project-name {
+    margin-right: 2%;
+    border: #617A55 solid;
+    background-color: #FFF8D6;
+    font-size: medium;
+}
+
+#shoe-box {
+    background-image: url("images/shoe.jpg");
+    grid-auto-rows: minmax(50px, auto);
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+}
+
+#game-box {
+    background-image: url("images/game.jpg");
+    grid-column: 1 / 2;
+    grid-row: 5;
+}
+
+#calculator-box {
+    background-image: url("images/calulator.jpg");
+    grid-column: 2 / 3;
+    grid-row: 5;
+}
+
+#weather-box {
+    background-image: url("images/weather.jpg");
+    grid-column: 3 / 4;
+    grid-row: 5;
+}
+
+#chat-box {
+    background-image: url("images/chat.jpg");
+    grid-column: 4 / 5;
+    grid-row: 5;
+}
+
+/*sets the background style, margin, and boarder for the project-box class*/
+.project-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1%;
+    border: 2px solid #617A55;
+}
+
+#chat-box:hover {
+    background-image: linear-gradient(to top, rgba(68, 151, 83, 0.8), rgba(255, 255, 255, 0.8)), url("images/chat.jpg");
+    cursor: pointer;
+}
+
+#calculator-box:hover {
+    background-image: linear-gradient(to top, rgba(68, 151, 83, 0.8), rgba(255, 255, 255, 0.8)), url("images/calulator.jpg");
+    cursor: pointer;
+}
+
+#shoe-box:hover {
+    background-image: linear-gradient(to top, rgba(68, 151, 83, 0.8), rgba(255, 255, 255, 0.8)), url("images/shoe.jpg");
+    cursor: pointer;
+}
+
+#weather-box:hover {
+    background-image: linear-gradient(to top, rgba(68, 151, 83, 0.8), rgba(255, 255, 255, 0.8)), url("images/weather.jpg");
+    cursor: pointer;
+}
+
+#game-box:hover {
+    background-image: linear-gradient(to top, rgba(68, 151, 83, 0.8), rgba(255, 255, 255, 0.8)), url("images/game.jpg");
+    cursor: pointer;
+}
+
+
+/*The code below allows the text and any other required areas to be adjusted based off of the screen size*/
 @media screen and (max-width: 420px) {
 
     #navigation-bar {
@@ -113,6 +191,10 @@ body {
     }
 
     #website-body {
+        font-size: small;
+    }
+
+    .project-name {
         font-size: small;
     }
 }

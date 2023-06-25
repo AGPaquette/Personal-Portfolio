@@ -15,27 +15,56 @@
             Adrian Garcia
         </h1>
         <section id="navigation-bar">
-            <a href="#about-me">About Me</a>
-            <a href="#my-projects">Projects</a>
-            <a href="#contact-info" id="contact-title">Contact Me</a>
+            <!-- a tags amke the text clickable in order to direct to nareas on the page -->
+            <a href="#about">About Me</a>
+            <a href="#project">Projects</a>
+            <a href="#contact" id="contact-title">Contact Me</a>
         </section>
     </header>
     <main id="website-body">
         <section id="about-me">
             <h3>About Me</h3>
             <img src="./assets/images/profile-picture.jpg" alt="Selfie of me in a red hat and white hoodie hiking">
-            <p>HELLO WORLD</p>
+            <p id="sbout">Started programing for my economics class using python in order to work with large portions of data. <br>
+            From there I started going down a rabbit whole on what else I could do with python and started building games using the pygame module.
+            There were times where I got frustrated, but completing a game was fun once i figured out the issue.
+            </p>
         </section>
         <section id="my-projects">
-            <h3>Projects</h3>
-        </section>
+            <h3 id="project">Projects</h3>
+            <!-- Created div instead of section to seperate it from the sectrion and show that its is own box -->
+            <div id="grid-box">
+                <section class="project-box" id="shoe-box">
+                    <h2 class="project-name">Custom Shoes Website</h2>
+    
+                </section>
+                <section class="project-box"id="game-box" >
+                    <h2 class="project-name">JavaScript Game</h2>
+    
+                </section>
+                <section class="project-box" id="calculator-box">
+                    <h2 class="project-name">Calculator</h2>
+    
+                </section>
+                <section class="project-box" id="weather-box">
+                    <h2 class="project-name">Weather</h2>
+    
+                </section>
+                <section class="project-box" id="chat-box">
+                    <h2 class="project-name">Chat Room</h2>
+    
+                </section>
+            </div>
+        </section>        
         <section id="contact-info">
-            <h3>Contact Me</h3>
+            <h3 id="contact">Contact Me</h3>
             <p>Phone: 562-205-6855</p>
             <p>Email: adrian.garcia.s.1607@gmail.com</p>
-            <a href="https://twitter.com/mumbles_69">Twitter</a>
         </section>
-        <footer>© 2023 Adrian Garcia</footer>
+        <footer>© 2023 Adrian Garcia<br><a href="#web-heading">Top</a></footer>
+        <div id="test">
+
+        </div>
     </main>
 </body>
 </html>
