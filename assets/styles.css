@@ -65,11 +65,6 @@ a:visited {
     background-color: var(--darkgreen);
 }
 
-#grid-box a {
-    color: #617A55;
-}
-
-
 /*changes the appearance of the navigation bar when the curser is over it as well as the apperance of the curser*/
 a:hover {
     color: black;
@@ -198,6 +193,9 @@ h2 {
     cursor: pointer;
 }
 
+#grid-box a {
+    color: #617A55;
+}
 
 /*The code below allows the text and any other required areas to be adjusted based off of the screen size*/
 @media screen and (max-width: 420px) {
