@@ -65,6 +65,11 @@ a:visited {
     background-color: var(--darkgreen);
 }
 
+#grid-box a {
+    color: #617A55;
+}
+
+
 /*changes the appearance of the navigation bar when the curser is over it as well as the apperance of the curser*/
 a:hover {
     color: black;
